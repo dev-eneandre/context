@@ -1,0 +1,92 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url("./fonts/Gilroy-Medium.ttf");
+}
+@font-face {
+    font-family: "ChronicleBlack" ;
+    src: url("./fonts/Chronicle\ Display\ Black.otf");
+}
+.shop{
+    background-color: #160c19;
+    /* color: #f7f7f7; */
+    height: 100vh;
+}
+.shop.dark{
+    background-color: black;
+}
+.shop__nav{
+    height : 8vh;
+    background-color: #28162d98;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    align-items: center;
+    font-family: "GilroyMedium";
+    color: #f7f7f7;
+    letter-spacing: 0.1rem;
+}
+.shop__store{
+    color: #f7f7f7;
+    font-family: "GilroyMedium";
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px
+}
+.shop__store__item{
+    background-color: #452e4c;
+    width:  250px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.shop__store__item:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 500ms ease-in-out;
+}
+.shop__store__item__size{
+    font-size: 0.8em;
+}
+.AddItem__header{
+    font-family: "GilroyMedium";
+    text-align: center;
+    color: #dad8d8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.AddItem__form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.AddItem__form input, .AddItem__form button{
+    width: 170px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 6px;
+    border: none;
+}
+.AddItem__form input::placeholder{
+    padding-left: 10px;
+}
+.AddItem__form input{
+
+}
+.AddItem__form button{
+ cursor: pointer;
+ color: #f7f7f7;
+ background-color: #452e4c;
+}
+.AddItem__form button:hover{
+    background-color: #322237;
+}
